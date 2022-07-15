@@ -2,7 +2,8 @@ module.exports = {
   apps : [{
     name: 'city-mysql-html',
     script: 'index.js',
-    watch: '.'
+    watch: true,
+    max_memory_restart: '200M'
   }, {
     script: './service-worker/',
     watch: ['./service-worker']
