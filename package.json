@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "npx gh-pages -d src/public/",
-    "dev": "nodemon src/index.js"
+    "deploy": "npx gh-pages -d build",
+    "dev": "nodemon src/index.js",
+    "pro": "parcel src/public/index.html"
   },
   "keywords": [],
   "author": "@juan",
   "license": "ISC",
   "dependencies": {
-    "crypto-js": "^4.1.1",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
@@ -22,6 +22,7 @@
     "mysql": "^2.18.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "parcel": "^2.6.2"
   }
 }
