@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "npx gh-pages -d build",
+    "deploy": "npx gh-pages -d src/public/",
     "dev": "nodemon src/index.js",
     "pro": "parcel src/public/index.html",
     "pm2st": "pm2 start src/ecosystem.config.js --env development",
