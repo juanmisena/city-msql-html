@@ -80,13 +80,11 @@ function getViewPass3() {
     if ($(i3).hasClass("bi-eye-fill")) {
       $(i3).removeClass("bi-eye-fill");
       $(i3).addClass("bi-eye-slash-fill");
-      $("#new_pass_user").attr("type", "text");
-      $("#conf_pass_user").attr("type", "text");
+      $("#add_pass_user").attr("type", "text");
     } else if($(i3).hasClass("bi-eye-slash-fill")) {
       $(i3).removeClass("bi-eye-slash-fill");
       $(i3).addClass("bi-eye-fill");
-      $("#new_pass_user").attr("type", "password");
-      $("#conf_pass_user").attr("type", "password");
+      $("#add_pass_user").attr("type", "password");     
     }
   });
 }
