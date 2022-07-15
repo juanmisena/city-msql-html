@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap Icons 1.8.3 -->
+  <link rel="stylesheet" href="/static/css/bootstrap-icons.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <title>Add City</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand">Edit City</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"><i class="bi bi-house-fill"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/indexdep">Departament</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Choose...
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/addcity">Add City</a></li>
+                <li><a class="dropdown-item" href="/addepartament">Add Departament</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-square"></i> ...
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/logout">Get Out</a></li>
+              </ul>
+            </li>
+        </ul>
+        <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" id="search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+        </div>
+    </div>
+  </nav>
+  <div class="container p-4">
+    <div class="row">
+      <div class="col mt-3">
+        <div class="card text-left">
+          <div class="card-body">
+            <form action="/updatecity" method="post">
+              <div class="mb-2">
+                <input type="hidden" name="id_ci" id="edit_id_ci" value="">
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Name City</label>
+              </div>
+              <div class="mb-2">
+                <input type="text" name="name_ci" id="edit_name_ci" class="form-control" value="" aria-describedby="helpId" required>
+              </div>
+              <div class="mb-2">
+                <label for="input-id" class="form-label">Name Departament</label>
+              </div>
+              <div class="mb-3">
+                <select class="form-select" aria-label="Default select example" name="id_dep" id="inputGroupSelect02" required>
+                  <option id="option1" value="" selected></option>
+                  <option id="option2" value="">One</option>
+                </select>
+              </div>
+              <div class="d-grid gap-2 mb-3">
+                <button type="submit" class="btn btn-success btn-block"><i class="bi bi-send"></i> Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap Bundle JS -->
+  <script src="/static/js/bootstrap.bundle.js"></script>
+  <!-- Jquery 3.6.0 -->
+  <script src="/static/js/jquery-3.6.0.min.js"></script>
+  <!-- My Script -->
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

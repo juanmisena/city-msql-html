@@ -1,0 +1,27 @@
+{
+  "name": "city-mysql-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npx gh-pages -d src/views/",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "@juan",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.17.3",
+    "gh-pages": "^4.0.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
