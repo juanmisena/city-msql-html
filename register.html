@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap Icons 1.8.3 -->
+  <link rel="stylesheet" href="/static/css/bootstrap-icons.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <title>Register</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 mt-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Register User</h5>
+            <form action="/register" method="post">
+              <div class="input-group flex-nowrap mb-3">
+                <label for="" class="input-group-text"><i class="bi bi-person-fill"></i></label>
+                <input type="text" name="add_name_user" id="add_name_user" class="form-control" placeholder="Name User..." required>
+              </div>
+              <div class="input-group flex-nowrap mb-3">
+                <label for="" class="input-group-text"><i class="bi bi-shield-fill"></i></label>
+                <input type="password" name="add_pass_user" id="add_pass_user" class="form-control" placeholder="Password..." required>
+              </div>
+              <div class="input-group d-grid gap-2">
+                <button type="submit" class="btn btn-primary btn-block">Send <i class="bi bi-send-fill"></i></button>
+              </div>
+            </form>
+            <div class="btn-toolbar mt-3" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" id="change3" class="btn btn-light">View Password? <i class="bi bi-eye-fill" id="i3"></i></button>
+              </div>
+              <div class="btn-group me-2" role="group" aria-label="Second group">
+                <a href="/login" class="btn btn-secondary">Back Login?<i class="bi bi-box-arrow-left"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap Bundle JS -->
+  <script src="/static/js/bootstrap.bundle.js"></script>
+  <!-- Jquery 3.6.0 -->
+  <script src="/static/js/jquery-3.6.0.min.js"></script>
+  <!-- CryptoJS AES 3.1.2 -->
+  <script src="/static/js/crypto-js-aes.min.js"></script>
+  <!-- My Script -->
+  <script src="/static/js/appLogin.js"></script>
+</body>
+</html>

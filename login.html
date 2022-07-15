@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap Icons 1.8.3 -->
+  <link rel="stylesheet" href="/static/css/bootstrap-icons.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <!-- SweetAlert2 CSS -->
+  <link rel="stylesheet" href="/static/css/sweetalert2.min.css">
+  <title>Login</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12 m-auto">
+        <form action="/login" method="post">
+          <h3>Login</h3>
+          <div class="mb-3">
+            <label for="" class="form-label">Name User</label>
+            <input type="text" name="name_user" id="name_user" class="form-control" placeholder="Name User..." required>
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Password</label>
+            <input type="password" name="pass_user" id="pass_user" class="form-control" placeholder="Password..." required>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary btn-block">Send <i class="bi bi-send-fill"></i></button>
+          </div>
+        </form>
+        <div class="btn-toolbar mt-3" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group me-2" role="group" aria-label="First group">
+            <button id="change" class="btn btn-light ps-3">Check Password <i id="i" class="bi bi-eye-fill"></i></button>
+          </div>
+          <div class="btn-group me-2" role="group" aria-label="Second group">
+            <a href="/register" class="btn btn-success">Register User <i class="bi bi-person-plus"></i></a>
+          </div>
+          <div class="btn-group" role="group" aria-label="Third group">
+            <button id="pass_reset" class="btn btn-link">Reset Pass? <i class="bi bi-check-all"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <!-- Bootstrap Bundle JS -->
+  <script src="/static/js/bootstrap.bundle.js"></script>
+  <!-- Jquery 3.6.0 -->
+  <script src="/static/js/jquery-3.6.0.min.js"></script>
+  <!-- SweetAlert2 JS -->
+  <script src="/static/js/sweetalert2.all.min.js"></script>
+  <!-- CryptoJS AES 3.1.2 -->
+  <script src="/static/js/crypto-js-aes.min.js"></script>
+  <!-- My Script -->
+  <script src="/static/js/appLogin.js"></script>
+</body>
+</html>
