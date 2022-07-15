@@ -3,6 +3,7 @@ $(document).ready(function () {
   getResetPass();
   getDecryptUser();
   getViewPass2();
+  getViewPass3();
 });
 function getViewPass() {
   var change = $("#change");
@@ -69,6 +70,21 @@ function getViewPass2() {
       $(i2).addClass("bi-eye-fill");
       $("#new_pass_user").attr("type", "password");
       $("#conf_pass_user").attr("type", "password");
+    }
+  });
+}
+function getViewPass3() {
+  var change3 = $("#change3");
+  var i3 = $("#i3");
+  $(change3).click(function () { 
+    if ($(i3).hasClass("bi-eye-fill")) {
+      $(i3).removeClass("bi-eye-fill");
+      $(i3).addClass("bi-eye-slash-fill");
+      $("#add_pass_user").attr("type", "text");
+    } else if($(i3).hasClass("bi-eye-slash-fill")) {
+      $(i3).removeClass("bi-eye-slash-fill");
+      $(i3).addClass("bi-eye-fill");
+      $("#add_pass_user").attr("type", "password");     
     }
   });
 }
