@@ -1,5 +1,6 @@
 module.exports = {
   apps : [{
+    name: 'city-mysql-html',
     script: 'index.js',
     watch: '.'
   }, {
