@@ -3,7 +3,10 @@ module.exports = {
     name: 'city-mysql-html',
     script: 'index.js',
     watch: true,
-    max_memory_restart: '200M'
+    max_memory_restart: '200M',
+    env_development: {
+      PORT: 8080
+    }
   }, {
     script: './service-worker/',
     watch: ['./service-worker']
