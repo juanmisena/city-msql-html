@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "npx gh-pages -d src/views/",
+    "deploy": "npx gh-pages -d src/public/",
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
