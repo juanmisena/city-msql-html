@@ -6,7 +6,9 @@
   "scripts": {
     "deploy": "npx gh-pages -d build",
     "dev": "nodemon src/index.js",
-    "pro": "parcel src/public/index.html"
+    "pro": "parcel src/public/index.html",
+    "pm2st": "pm2 start src/ecosystem.config.js --env development",
+    "pm2so": "pm2 stop src/ecosystem.config.js --env development"
   },
   "keywords": [],
   "author": "@juan",
