@@ -8,7 +8,7 @@ controller.home = function (req, res, next) {
   } else{
      res.redirect('/login');
   }
-  res.sendFile(path.join(__dirname, '../public/index.html'));
+  res.sendFile(path.join(__dirname, '../public/indexCity.html'));
 }
 controller.list = function (req, res, next) {
   req.getConnection((err, conn) => {

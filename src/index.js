@@ -14,8 +14,8 @@ app.use(myConnection(mysql, dbOptions, 'single'));
 app.use(session({resave: false, saveUninitialized: false, secret: 'secret'}));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-// app.use('/static', express.static(path.join(__dirname ,'public')));
-app.use('/static', express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname ,'public')));
+// app.use('/static', express.static(path.join(__dirname, 'public')));
 app.use('/', routerController);
 
 app.listen(port , ()=> console.log('> Server is up and running on port : ' + port));
