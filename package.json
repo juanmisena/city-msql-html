@@ -7,8 +7,8 @@
     "deploy": "npx gh-pages -d src/public/",
     "dev": "nodemon src/index.js",
     "pro": "parcel src/public/index.html",
-    "pm2st": "cd src && pm2 start ecosystem.config.js",
-    "pm2so": "cd src && pm2 stop ecosystem.config.js"
+    "pm2st": "cd src && pm2 start ecosystem.config.js --env development",
+    "pm2so": "cd src && pm2 stop ecosystem.config.js --env development"
   },
   "keywords": [],
   "author": "@juan",
